@@ -120,12 +120,12 @@
 //   sum(a,b,c);
 // }
 // calculator(1,2,8)
-function getData(dataId,getNextData){
-  setTimeout(()=>{
-    console.log("getdata",dataId)
-    getNextData();
-  }, 3000);
-};
-getData(1, ()=>{
-  getData(2);
-})
+// function getData(dataId,getNextData){
+//   setTimeout(()=>{
+//     console.log("getdata",dataId)
+//     getNextData();
+//   }, 3000);
+// };
+// getData(1, ()=>{
+//   getData(2);
+// })
