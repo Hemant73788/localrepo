@@ -76,21 +76,56 @@
 
 // // Calling the fetchData function and passing the processData function as a callback
 // fetchData(processData);
-const myPromise = new Promise((resolve, reject) => {
-    // Simulate an asynchronous operation (e.g., fetching data from a server)
-    setTimeout(() => {
-        const data = Math.random();
-        if (data > 0.5) {
-            resolve(data); // Fulfill the promise with the generated data
-        } else {
-            reject(new Error('Data is less than or equal to 0.5')); // Reject the promise
-        }
-    }, 1000); // Simulating a delay of 1 second
-});
+// const myPromise = new Promise((resolve, reject) => {
+//     // Simulate an asynchronous operation (e.g., fetching data from a server)
+//     setTimeout(() => {
+//         const data = Math.random();
+//         if (data > 0.5) {
+//             resolve(data); // Fulfill the promise with the generated data
+//         } else {
+//             reject(new Error('Data is less than or equal to 0.5')); // Reject the promise
+//         }
+//     }, 1000); // Simulating a delay of 1 second
+// });
 
-myPromise.then((data) => {
-    console.log('Promise fulfilled with data:', data);
-}).catch((error) => {
-    console.error('Promise rejected with error:', error);
-});
+// myPromise.then((data) => {
+//     console.log('Promise fulfilled with data:', data);
+// }).catch((error) => {
+//     console.error('Promise rejected with error:', error);
+// });
 
+  // function tryMe(param1, param2) {
+  // console.log(param1 + " and " + param2);
+//}
+//console.log(tryMe)
+// Define a function that takes a callback as an argument
+// function callbackTester(data) {
+//   // Do some task
+//   console.log("fetching data...",);
+//   // Invoke the callback function
+//   data( 5,6);
+// }
+// // Call the tester function and pass an anonymous function as a callback
+// callbackTester(function data
+//   (a,b) {
+//   return a+b;
+//   console.log("data 1",)
+// });
+// Pass the arguments to the callback function inside the anonymous function
+//tryMe("hello", "goodbye");
+// function sum(a,b,c){
+//   console.log(a+b*c);
+// };
+// function calculator( a,b,c){
+//   sum(a,b,c);
+// }
+// calculator(1,2,8)
+function getData(dataId,getNextData){
+  setTimeout(()=>{
+    console.log("getdata",dataId)
+    getNextData();
+  }, 3000);
+};
+getData(1, ()=>{
+  getData(2);
+})
