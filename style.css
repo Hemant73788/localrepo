@@ -1,26 +1,21 @@
-*{
-    margin: 0;
-    padding: 0;
 
 
-}
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: white;
-}
-.container{
-    background-color: #fff;
-    padding: 2rem;
-    border-radius: 1rem;
-}
-div {
-    height: 100px;
+
+input[type="text"]{
+    height: 30px;
     width: 100px;
-    background-color: dodgerblue;
-    color: white;
-    border: 1px solid b;
+}
+input[type = "password"]{
+    height: 30px;
+    width: 100px;
 
+}
+input[type = "submit"]{
+    height: 30px;
+    width: 100px;
+    
+}
+img{
+    height: 200px;
+    width: 200px;
 }

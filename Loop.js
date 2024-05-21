@@ -274,3 +274,136 @@
 // const add=functon(){
 //    return Math.random()
 // }
+// function makeDeck(){
+//     const deck = [];
+//     const suits =['harts','spades','diamond','clubs']
+//     const values=['1','2','3','4','5','6','7','8','9','10','j','Q','K','A']
+//     for(let value of values.split(',')){
+//         for(let suit of suits){
+//             Push.deck({
+//                 value,
+//                 suit
+//             })
+//         }
+//     }
+//     return deck;
+// }
+//console.log(makeDeck())
+// const person = {
+//     name:'hemant',
+//     last:'jangra',
+//     city:'kanina',
+//     state:'haryana',
+//     fullName:function(){
+//         console.log(`hello,my name is ${this.name} ${this.last} from ${this.city} state ${this.state}.`)
+//     }
+
+// };
+// person.city = ateli;
+// console.log(person.city)
+// const person = {
+//     name: 'John Doe',
+//     age: 30,
+//     email: 'john.doe@example.com',
+//     address: {
+//       street: '123 Main St',
+//       city: 'Anytown',
+//       state: 'CA'
+//     },
+//     sayHello: function() {
+//       console.log(`Hello, my name is ${this.name}`);
+//     }
+//   };
+// for(let i in person){
+// }
+// console.log('$(this.name)')
+// const students=[
+//     {name:'hemant',class:'12th',village:'kemla',city:'kanina'},
+//     {name:'amit',class:'10th',village:'gudha',city:'ateli'},
+//     {name:'rahul',class:'11th',village:'pathera',city:'narnaul'},
+//     {name:'kuldeep',class:'9th',village:'rasulpur',city:'rewari'}
+// ]
+// for(let i of student){
+// }
+// console.log(student[1])
+// for(let i in student[1]){
+// }
+// console.log("name:",student[1].name)
+// console.log("class:",student[1].class)
+//   const person = new Object();
+//   person.name = 'John Doe';
+//   person.age = 30;
+//   person.email = 'john.doe@example.com';
+//   person.address = {
+//     street: '123 Main St',
+//     city: 'Anytown',
+//     state: 'CA'
+//   };
+//   person.sayHello = function() {
+//     console.log(`Hello, my name is ${this.name}`);
+//   };
+// const person ={
+//     name:'hemant',
+//     age:'25',
+//     last:'jangra',
+//     class:'12th',
+//     address:{
+//         city:'kanina',
+//         village:'kemla',
+//         state:'haryana',
+//     },
+//         fullname:function(){
+//             console.log(`hello,my name is ${this.name} ${this.last} and i'am ${this.age} year old`);
+//         }
+// };
+// function greet({name,age}){
+//     console.log(`hello,my name is ${name}`)
+// }
+// greet(person)
+// // const{name,age,...contactInfo}=person;
+// // console.log(...contactInfo)
+
+// const person={
+//     name:'hemant',
+//     rollno:'1736120',
+//     class:'12th',
+//     vilalge:'kemla',
+//     city:'kanina'
+// }
+// const{name,rollno,...contactInfo}=person
+// console.log(contactInfo)
+// const{city,...contactInfo}=person;
+    
+// console.log(contactInfo)
+// const numbers= [1, 2, 3, 4];
+// console.log(Math.max(...numbers));
+// Spread in Function Calls
+// const numbers = [1, 2, 3, 4];
+// console.log(Math.max(...numbers)); // Output: 4
+
+// Spread in Array Literals
+// const moreNumbers = [...numbers, 5, 6, 7];
+// console.log(moreNumbers); // Output: [1, 2, 3, 4, 5, 6, 7]
+
+// Spread in Object Literals
+// const person = { name: 'John', age: 30 };
+// const updatedPerson = { ...person, email: 'john.doe@example.com' };
+// console.log(updatedPerson); // Output: { name: 'John', age: 30, email: 'john.doe@example.com' }
+// const numbers=[1,3242,435,47,87,13,553,8,2353,42,64,790,2314,6754,9,93,43]
+// console.log(Math.max(...numbers));
+// const moreNumbers=[...numbers,34,35,36];
+// console.log(moreNumbers)
+// const person={
+//     name:'hemant',
+//     last:'jangra',
+//     rollno:'3434',
+//     class:'12th',
+//     address:{
+//         village:'kemla',
+//         city:'kanina',
+//         state:'haryana'
+//     }
+// }
+// const{name,address: {city,village}}=person;
+// console.log("name:",name,"village:",village,"city:",city)
+// console.log()
